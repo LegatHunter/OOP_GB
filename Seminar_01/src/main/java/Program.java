@@ -43,6 +43,8 @@ public class Program {
         products.add(bottleOfMilk2);
         products.add(bottleOfMilk3);
 
+
+
         VendingMachine vendingMachine = new VendingMachine(products);
         BottleOfMilk bottleOfMilk = vendingMachine.getBottleOfMilk("Бутылка с молоком #2", 0.5);
         if (bottleOfMilk == null){

@@ -8,6 +8,8 @@ public class Product {
 
     protected double price;
 
+    protected int col;
+
     public String getBrand() {
         return brand;
     }
@@ -24,6 +26,9 @@ public class Product {
         checkPrice(price);
     }
 
+    public int getCol() { return col;}
+
+    public void  setCol(int col) { checkCol(col); }
     public String getName(){
         return name;
     }
@@ -44,6 +49,7 @@ public class Product {
         checkName(name);
         checkBrand(brand);
         checkPrice(price);
+        checkCol(col);
     }
 
     private void checkPrice(double price){
@@ -70,6 +76,15 @@ public class Product {
         }
         else {
             this.brand = brand;
+        }
+    }
+
+    private void checkCol(int col){
+        if (col < 0){
+            this.col = 0;
+        }
+        else{
+            this.col = col;
         }
     }
 
