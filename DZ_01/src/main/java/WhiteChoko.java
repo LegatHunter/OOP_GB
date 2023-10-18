@@ -1,10 +1,9 @@
 //package Seminar_01;
-
-public class MilkaBlack extends Choko{
+public class WhiteChoko extends Choko{
     private int colories;
     private double price;
 
-    public MilkaBlack(String name, double volume, int colories, double price){
+    public WhiteChoko(String name, double volume, int colories, double price){
         super(name, volume);
         checkColories(colories);
         checkPrice(price);
@@ -26,14 +25,17 @@ public class MilkaBlack extends Choko{
     public void setPrice(double price) {
         this.price = price;
     }
+
     public void checkPrice(double price){
         if(price < 100) {
             this.price = 100;
         }else {
             this.price = price;
         }
-    } public void checkColories(int colories){
-        if(colories < 100) {
+    }
+
+    public void checkColories(int colories){
+        if(colories < 10) {
             this.colories = 100;
         }else {
             this.colories = colories;

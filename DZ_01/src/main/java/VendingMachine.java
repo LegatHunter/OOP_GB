@@ -9,7 +9,7 @@ public class VendingMachine {
         this.chokos = chokos;
     }
 
-    public BlackChoko getBlackChoko(String name, double volume, int price){
+    public BlackChoko getBlackChoko(String name, double volume, int price, int i){
         for (Choko choko: chokos) {
             if(choko instanceof BlackChoko){
                 BlackChoko blackChoko = (BlackChoko) choko;
