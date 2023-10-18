@@ -9,7 +9,7 @@ public class MainClass {
 
         for (Cat cat : cats) {
             cat.eat(plate);
-            System.out.println(cat.getName() + " is hungry: " + cat.isHungry());
+            System.out.println(cat.getName() + " голоден: " + cat.isHungry());
         }
 
         plate.increaseFood(10);
