@@ -12,8 +12,8 @@ public class Program {
         orangeBox1.pourTo(orangeBox2);
 
         System.out.println("Вес orangeBox1: " + orangeBox1.getWeight());
-        System.out.println("Вес of orangeBox2: " + orangeBox2.getWeight());
-        System.out.println("Вес of appleBox: " + appleBox.getWeight());
+        System.out.println("Вес orangeBox2: " + orangeBox2.getWeight());
+        System.out.println("Вес appleBox: " + appleBox.getWeight());
 
         boolean isEqual = orangeBox1.compare(appleBox);
         System.out.println("Одинаковы ли по весу OrangeBox1 и AppleBox? " + isEqual);
