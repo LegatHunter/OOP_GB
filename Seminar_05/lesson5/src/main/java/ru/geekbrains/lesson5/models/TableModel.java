@@ -40,10 +40,7 @@ public class TableModel implements Model {
         for (Table table : loadTables()) {
             for (Reservation reservation : table.getReservations()) {
                 if (reservation.getId() == oldReservation) {
-                    // Найден старый резерв, удаляем его
                     table.getReservations().remove(reservation);
-
-                    // Создаем новый резерв
                     Reservation newReservation = new Reservation(table, reservationDate, name);
                     table.getReservations().add(newReservation);
 

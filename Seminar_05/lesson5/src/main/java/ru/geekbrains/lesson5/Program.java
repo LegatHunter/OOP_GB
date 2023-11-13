@@ -8,7 +8,6 @@ import java.util.Date;
 
 public class Program {
 
-    //TODO: Метод changeReservationTable должен заработать!
     public static void main(String[] args) {
 
         TableModel tableModel = new TableModel();
